@@ -6,6 +6,19 @@
   <component name="ChangeListManager">
     <list default="true" id="2be5a46f-1656-4ef5-999e-b34da218b473" name="Changes" comment="dj">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/asgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/settings.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/urls.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/app/wsgi.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/admin.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/apps.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/migrations/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/models.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/tests.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/blog/views.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/manage.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,9 +79,16 @@
     &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;django&quot;
+    &quot;git-widget-placeholder&quot;: &quot;django&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/PythonProject4&quot;
   }
 }</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\PythonProject4" />
+      <recent name="C:\PythonProject4\app\app" />
+    </key>
+  </component>
   <component name="RunManager">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="PythonProject4" />
