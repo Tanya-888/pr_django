@@ -18,8 +18,14 @@ Including another URLconf
 
 from django.contrib import admin
 from django.urls import path, include
+from blog import views as blog_views  # ваш модуль с views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('blog.urls')),
+    path('accounts/', include('django.contrib.auth.urls')),  # вход, выход, пароль
+    path('register/', blog_views.register, name='register'),  # регистрация
+    path('', blog_views.home, name='home'),  # главная
+    path('post/<int:pk>/', blog_views.post_detail, name='post_detail'),  # просмотр поста
+    path('post/<int:post_id>/add_comment/', blog_views.add_comment, name='add_comment'),  # добавление комментария
 ]
