@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8" />
+<title>{{ post.title }}</title>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+<div class="container">
+<h1>{{ post.title }}</h1>
+<p>Автор: {{ post.author.username }} или Аноним, {{ post.date_posted }}</p>
+<div>{{ post.content }}</div>
+
+<h3>Комментарии</h3>
+{% for comment in comments %}
+  <div class="border p-3 mb-2">
+    <strong>{{ comment.author.username }}</strong>: {{ comment.content }}<br>
+    <small>{{ comment.created_at }}</small>
+  </div>
+{% empty %}
+  <p>Нет комментариев.</p>
+{% endfor %}
+
+{% if user.is_authenticated %}
+<h4>Добавить комментарий</h4>
+<form method="post" action="{% url 'add_comment' post.id %}">
+  {% csrf_token %}
+  <textarea name="content" class="form-control" rows="3"></textarea>
+  <button class="btn btn-primary mt-2" type="submit">Отправить</button>
+</form>
+{% else %}
+<p><a href="{% url 'login' %}">Войдите</a>, чтобы оставить комментарий.</p>
+{% endif %}
+</div>
+</body>
+</html>
